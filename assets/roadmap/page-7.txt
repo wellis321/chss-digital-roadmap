@@ -1,0 +1,28 @@
+DIGITAL INCLUSION
+& ACCESSIBILITY
+A key driver of building a digital supported self management offer is to be able
+to include more people in CHSS’ service offer and to reduce geographical and
+demographic variation in service availability.
+Digital accessibility and inclusion needs to be held at the forefront of any development
+of digital services. At this stage that’s resulted in two principles being established.
+Maximise availability
+Any tool should be built as a browser-based web system as well as a mobile app to
+ensure the tool can be accessed without the need for a personal smart phone and be
+available to as many people as possible.
+.
+Maximise accessibility
+We are committed to ensuring that our digital health tool is accessible to everyone. This
+will likely include steps to make our tool usable by everyone, including:
+• Conforming to WCAG 2.1 Level AA: We have designed our tool to meet the Web
+Content Accessibility Guidelines (WCAG) 2.1 Level AA, which provides a set of standards
+for making web content accessible to people with disabilities.
+• Providing alternative text for images: All images on our tool have descriptive
+alternative text, which is important for people who are blind or have low vision.
+• Using clear and consistent language: We have used clear and simple language
+throughout our tool to make it easy to understand for people with cognitive disabilities.
+• Providing keyboard navigation: Our tool can be fully navigated using a keyboard,
+which is important for people who cannot use a mouse.
+It is also important to highlight that this is being proposed as a service enhancement
+rather than a service replacement. Existing pathways and non-digital routes to access
+services will of course remain for those unwilling or unable to access services and
+resources digitally.

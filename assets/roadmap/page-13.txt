@@ -1,0 +1,82 @@
+PHASE 1: PREPARATION The preparation phase is about getting ducks in a row
+in order to deliver something world class in Supported
+self management. A large amount of work is already
+underway and further packages of work has been
+identified that need to be completed to address
+immediate needs as well as prepare CHSS for these
+exciting changes.
+E-learning
+Current e-learning courses are well used and well
+regarded by service users and professionals. The
+courses are an important part of CHSS’ future and
+empowering individuals to educate themselves about
+their condition.
+A package of work is still underway to determine best
+route forward but it is expected all courses will need
+to be re-authored on a course building to future-proof
+them and maximise their usefulness and applicability.
+Reworking will allow them to be deployable to any
+chosen LMS, be surfaced within the SSM digital tool as
+well as deployable to national CPD learning platforms
+like TURAS.
+Digital assets
+CHSS’ have a number of digital assets, websites and
+mobile applications. They are in various states of
+upkeep and use and a number of work packages have
+been defined to evaluate their future importance and
+restore them to industry standard if required. This would
+allow the digital assets that we feel are important and
+have longevity to be in a good state for referring into by
+CHSS team or our digital platform.
+Housekeeping
+Work is already underway in improving reporting and
+recording cases digitally. More and more services
+are being onboarded onto D365 for their case
+management and data is already being prepped
+for PowerBI, a powerful reporting tool that’s part of
+Microsoft’s suite of tools. Work will continue in these
+areas as well as some work on our IT security too.
+Integrations
+As well as D365 as our case management, some
+specific pieces of software are used across CHSS to
+serve particular needs (e.g. Assemble for volunteer
+management or Raiser’s Edge for fundraising). Part
+of a change requires these tools to integrate and
+share information more effectively and in line with
+governance requirements. We will be exploring
+integrations of these tools.
+Future state work
+With preparation work ongoing on existing assets
+and infrastructure, an in-depth exercise needs to be
+undertaken to fully understand, scope and design what
+our future tool looks like.
+Two work packages designing the tool with CHSS team
+and users will need to be carried out. This will cover
+both the user experience and functionality of the SSM
+tool as well as the technical and data design of D365
+and CHSS’s Case Management to facilitate the design
+and maximise the opportunity.
+Chest Heart & Stroke Scotland | DIGITAL ROADMAP | April 2025 NOW - APR 2025
+Opportunities
+Once parts of the system are in their final state we
+don’t need to wait for SSM tool launch to benefit
+from the change. Apps can be sign-posted,
+E-learning in new LMS could have service users
+routed to it.
+TURAS are ready and willing to support testing
+e-learning material form CHSS in their system.
+Risks
+Many of the work packages will require significant
+input from the CHSS team but business as usual
+at CHSS is a significant undertaking and can’t
+suffer. Work and input will need to planned
+carefully.
+Governance of service user information with
+volunteer input is complicated. Assemble
+integration will need to be managed carefully and
+with consideration for long-term implications
+Services are varied both in specifics of delivery
+and personnel delivering. Onboarding into D365
+and designing a future state will need to be done
+in tandem and may require compromise from
+both

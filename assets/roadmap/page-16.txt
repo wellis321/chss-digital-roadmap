@@ -1,0 +1,52 @@
+PHASE 2A & 2B: BUILD 25/26 FINANCIAL YEAR
+Phase 2 is focussed on implementing the learning from
+the usability and technical design work in phase 1 to
+build out the first version of their self management app.
+As well as this, some further developments of other
+parts of the system will be possible as a result of phase
+1 work.
+Digital Assets
+Further work has also been identified to improve the
+design and user flows of the CHSS website. Especially
+as new offerings come online and a repositioning of
+CHSS’ offer will be required.
+Redesigning the CHSS website to serve the new
+opportunities given by improvements in Phase 1 and
+maximising the potential of the coming changes.
+Opportunities
+CHSS hold an ambition to move fast and be
+innovative to offer something truly world class.
+That an exciting opportunity and the design and
+release cycle should match. Building, releasing,
+testing and learning to hone something fantastic.
+Future state design
+Phase 1 work packages will deliver a final design and
+data structure required for version 1 of self management
+app. This can be interrogated to design the packages
+of development work required and a release schedule
+for the tool. Focus will be placed on releasing often and
+early in order to get the tool in the hands of users to test
+and learn. Iterative and continuous feedback will shape
+the tool and the development priorities to build towards
+a releasable version.
+Risks
+A balance needs to be struck with a desire
+to release something as soon as possible yet
+launching a tool that people can trust and
+improves their experience. A robust plan for
+evaluating the tool will need to be established to
+ensure organisational confidence.
+E-Learning
+With e-learning courses updated and future-
+proofed they will can be deployed into any learning
+management system. With this change, work can be
+undertaken to host the courses in TURAS if we chose to,
+to offer a clearer CPD route for those working within the
+NHS in Scotland. This also gives us the capability to
+develop a digital version of our SSM model.
+It will allow progress to be taken with generation
+income from the professional courses outside of
+the UK. Either through individuals taking the courses or
+through agreements with other countries’ CPD
+provision.
+Chest Heart & Stroke Scotland | DIGITAL ROADMAP | April 202

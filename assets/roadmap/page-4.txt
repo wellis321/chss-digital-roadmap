@@ -1,0 +1,46 @@
+Regardless of the chronic condition, people have similar
+challenges with self management. People can learn the
+skills needed to better manage their diseases day to day
+which can help them lead happier and healthier lives.
+Our ambition is that every person with our conditions
+should have access to world class supported self
+management and community recovery.
+Core to achieving this is a need for a digital offering
+from CHSS that empowers individuals to manage their
+care and access resources and services.
+Our digital infrastructure requires an overhaul to meet
+this need. We have defined our current setup, identified
+future requirements, and created this digital roadmap
+that details the journey we need to take to get there.
+Supported Self Management
+Our goal is to create a tool for our service users and
+other audiences, that guides and steers their interaction
+with CHSS and the services available to them. Giving
+them transparency of the care they can receive, the
+ability to take control of their condition, and the steps
+they can take to manage and improve their situation.
+The tool is focused around two key priorities:
+• Helping people manage and organise their care
+– including reviewing and updating goals and
+managing appointments.
+• Highlighting services and resources that are relevant
+to them to help manage their condition and
+encouraging and prompting them to access those
+services.
+Where possible for transparency, progress and
+completion should be displayed in the tool so it
+captures the user progress and can motivate and
+support them. For example, progress through learning
+modules or a summary of recent calls.
+Chest Heart & Stroke Scotland | DIGITAL ROADMAP | April 2025 Aligned to our strategic goals
+This work is prompted by and closely aligned to
+the strategic goals of CHSS and an underlying
+vision to deliver world class supported self
+management. It relates a number of goals
+including:
+Reach additional 175’000 people through
+application of SSM&CR model
+Strive to have SSM and CR services in every
+board by 2028
+Design develop and launch a new Learning
+management system

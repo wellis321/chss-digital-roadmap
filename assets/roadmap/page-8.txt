@@ -1,0 +1,66 @@
+OVERVIEW OF
+CURRENT SETUP
+CHSS’ entire digital landscape has been reviewed
+and mapped to understand our current situation and
+the steps needed to get us to a position where we
+could launch an excellent digital tool to support self
+management.
+We have good foundations
+The overwhelming positive is that CHSS has good
+foundations to build upon and little to no backwards
+steps need to be taken to move forward.
+A well-structured and effective case management
+system is already in place in D365, with work currently
+taking place to ensure all our services can be managed
+easily through the system. It’s a great platform to be the
+basis of a self management system and is both scalable
+and has all the features available for us to build an
+integrated self management tool.
+Our other systems and platforms work well for their
+specific uses. Doing this initial audit allows us to ensure
+they are connected to each other in a way that makes
+sense for streamlined operations and processes and
+effective reporting.
+Key Strengths
+The strengths of our current system that we want
+to keep are:
+• We have successfully implemented D365, a
+system capable of achieving the integrations
+and experience we aspire to. It is a great
+platform to build upon.
+• The structure of CHSS case management
+is sensible and scalable to meet the needs
+of deeper integration and richer data
+management in the future.
+• Many of the services are highly ‘digital ready’
+and it’s easy to see a pathway to deliver the
+service, or refer into, and enhance the service
+through a digital tool.
+• CHSS is an organisation with a huge amount
+of appetite and energy for improving care
+and embracing digital. We are perfectly
+placed to deliver something world leading.
+Chest Heart & Stroke Scotland | DIGITAL ROADMAP | April 2025 Key Issues
+The issues we know we need to address
+• Many of our systems are not yet integrated,
+which makes it trickier to get a full picture of
+our data. We want to continue developing
+our reporting and dashboards to provide
+more automated, live views of data.
+• We want digital to enhance the service
+experience, not replace it where other
+channels are more beneficial. We are
+passionate about ensuring our service users
+get the best experience and will ensure
+digital pathways, services and processes
+provide the best levels of support. Digital
+content and tools provide opportunities for
+service users to amplify and continue their
+experience with us between appointments.
+• Service delivery is highly variable. We offer
+different types of services, delivered in
+different formats, with different desired
+outcomes. It is going to be a challenge
+to standardise the experience and ensure
+recording and reporting across the service is
+consistent.

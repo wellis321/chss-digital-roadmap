@@ -1,0 +1,89 @@
+PHASE 2A & 2B:
+WORK PACKAGES 25/26 FINANCIAL YEAR
+Ongoing work packages
+In progress
+WP103: App redeployment
+Re-evaluating the Talk with Me app and making
+decision on whether to redeploy to the app stores
+and as a service offer from CHSS
+In progress
+WP109: Supported Self Management tool scoping/
+co-design exercise
+Co-design with Humanly and different CHSS teams
+to fully understand requirements of the supported self
+management tool and build a scope of work and final
+design for phase 1 of the tool.
+In progress
+WP111: Define Service user profile and Service
+database design
+Design the architecture and infrastructure to facilitate
+specification decided in the brief including; integration
+with D365, setting up clinical data store, impact measure
+planning, API, Analytics, Web/Native approach, Auth (Scot
+Account), National Digital Platform consideration
+In progress
+WP112: Cyber Security
+Get Cyber Essentials certification and regular
+penetration testing and audit of systems
+In progress
+WP113: Setup of PowerBI Health Board Reporting
+Dashboard
+Data cleansing and improving how we’re collecting and
+reporting data. Setup PowerBI dashboards reporting on
+services and service users across health boards
+In progress
+WP114: Onboarding outstanding services into D365
+Continue onboarding services, processes and
+evaluation data into D365 and update the referral portal
+to support wider services and user needs.
+WP115 Raiser’s Edge/Finanical System Integration
+Explore and define Raiser’s Edge integration with
+our financial information to share finance data and
+fundraising figures.
+2A: Future state design
+WP201: Core data services
+The design and build of the core data services; API
+setup, Database design and setup, Data modelling,
+Design of data store of features that were established by
+WP111
+WP202: Web app build
+Build out V1 of Supported Self Management tool as
+per spec and outcome of WP109 and WP111. Built as a
+web-based portal ready for testing.
+WP203: User testing of SSM tool
+User testing of the tool with an identified user group to
+gather feedback and understand effectiveness/issues
+before further refinement.
+WP204: Build out of mobile apps
+Build out v1 of mobile applications considering defined
+scope and findings from WP202 web build and WP203
+user testing.
+WP205: integrations
+Integrating with any relevant services identified in the
+scope of work.
+WP206: User testing of full SSM tool
+Fuller user testing of the tool for quality control and user
+understanding of tool for launch considerations.
+WP207: Rollout
+Deployment into CHSS infrastructure and rollout
+monitoring
+WP208: Future integrations
+Integrating with external services, such as Scot account
+for service user sign-up or EMIS for GP referral
+2B: E-Learning
+WP209: E-learning Course Deployment to TURAS
+Packaging up of relevant courses for deployment on
+TURAS for professional CPD within Scotland. Daysix
+could collaborate with NES to test one course and see
+what’s possible and how courses would appear on
+TURAS and what data comes back.
+WP211: Replicating the SSM model digitally
+Replication of the SSM course via our LMS and
+integrated with our self management tool, subject to
+discussions with SMRC.
+2B: Digital Assets
+In progress
+WP210: Website redesign and build
+Website redesign alongside further back end
+improvements. Integrating Laravel and Livewire with
+Wordpress as dependency

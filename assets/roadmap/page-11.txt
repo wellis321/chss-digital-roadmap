@@ -1,0 +1,12 @@
+INTEGRATING OUR SYSTEMS
+TO GIVE US LIVE DATA
+We use different systems across different areas and teams within CHSS. The
+systems serve specific purposes however this means we have crucial data
+stored in different places. We’re not proposing moving from these systems
+as these provide vital support. But a priority is for us to investigate how we
+collate this data to provide us with a 360-degree view of CHSS’s activities
+and reach.
+We are starting a project to develop a data warehouse solution, which
+will allow us to bring our data across systems together into one view.
+This would allow us to gather more insights and have live, real-time data
+available across our dashboards.

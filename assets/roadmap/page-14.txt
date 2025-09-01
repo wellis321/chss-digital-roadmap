@@ -1,0 +1,76 @@
+PHASE 1: WORK PACKAGES
+E-Learning
+Complete
+WP101: E-learning Course Conversion Investigation
+Exploring most effective way to convert e-learning
+assets into format that allows them to be future-
+proofed. Editable by CHSS team, deployable to multiple
+LMS options, styled to be in line with CHSS brand and
+integrated into wider digital infrastructure
+Continuing into Phase 2
+WP105: E-learning Course Conversion
+Completing the conversion of courses to final format
+based on outcome of P101
+Continuing into Phase 2
+WP106 E-learning Course Deployment to LMS
+Evaluation and decision on best LMS for both
+professional and service user facing e-learning courses
+and deployment of courses to chosen LMS platform or
+platforms.
+Future state design
+Continuing into Phase 2
+WP111: Define Service user profile and Service
+database design
+Design the architecture and infrastructure to facilitate
+specification decided in the brief including; integration
+with D365, setting up clinical data store, impact measure
+planning, API, Analytics, Web/Native approach, Auth (Scot
+Account), National Digital Platform consideration
+Digital Assets
+Continuing into Phase 2
+WP103: App redeployment
+Re-evaluating the Talk with Me app and making
+decision on whether to redeploy to the app stores
+and as a service offer from CHSS
+Continuing into Phase 2
+WP109: Supported Self Management tool scoping/
+co-design exercise
+Co-design with Humanly and different CHSS teams
+to fully understand requirements of the supported self
+management tool and build a scope of work and final
+design for phase 1 of the tool.
+Complete
+WP108: Website backend upgrade to industry
+standard
+Use webpack for SCSS and Javascript transpilation
+and convert existing content types into blocks.
+Restructuring templates to keep codebase clean/
+manageable + documentation
+Integrations
+Final testing
+WP102: Assemble/CTI/D365 Integration
+Defining and delivering requirements for integrating
+Assemble with D365 and navigating the data security of
+volunteer access and writing to service user records.
+Chest Heart & Stroke Scotland | DIGITAL ROADMAP | April 2025 24/25 FINANCIAL YEAR
+Now phase 2
+WP115 Raiser’s Edge/Finanical System Integration
+Explore and define Raiser’s Edge integration with
+our financial information to share finance data and
+fundraising figures.
+Housekeeping
+Continuing into Phase 2
+WP112: Cyber Security
+Get Cyber Essentials certification and regular
+penetration testing and audit of systems
+Continuing into Phase 2
+WP113: Setup of PowerBI Health Board Reporting
+Dashboard
+Data cleansing and improving how we’re collecting and
+reporting data. Setup PowerBI dashboards reporting on
+services and service users across health boards
+Continuing into Phase 2
+WP114: Onboarding outstanding services into D365
+Continue onboarding services, processes and
+evaluation data into D365 and update the referral portal
+to support wider services and user needs.

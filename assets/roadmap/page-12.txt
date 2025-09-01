@@ -1,0 +1,60 @@
+HOW WE
+GET THERE
+Phase 1: Preparation
+14 Work Packages across integrations, E-learning,
+redeploying existing assets, designing future state
+and housekeeping
+Moving tools to a state that allows deeper integra-
+tion and facilitates an SSM digital offering.
+Packages of work
+• E-learning Course Conversion Investigation
+• E-learning Course Conversion
+• Assemble/CTI/D365 Integration
+• Fast app relaunch
+• Talk with Me app relaunch
+• E-learning Course Deployment
+• E-Learning TURAS test
+• Tailored Talks Evaluation
+• Website rebuild phase 1
+• SSM scoping/ codesign exercise
+• Service user profile and Service database
+design
+• PowerBI Health Board Reporting
+• Cyber Security
+• Onboarding outstanding services into D365
+Timelines
+To be completed by April 2025
+Phase 2a: Build of self management
+tool
+With assets and functions across CHSS in a better
+format and design and spec of the digital tool
+complete, 4 Work Packages to build and test the
+SSM digital offer.
+Packages of work
+• Initial Build of Digital SSM tool web
+• Setup of D365
+• User Testing of Digital SSM tool
+• Build out of mobile apps
+Timelines
+To be completed by end of 25/26 financial year
+Phase 3: Launch of self
+management tool
+Launching the tool into CHSS production envi-
+ronment and making it an organisation wide offer.
+Ongoing support of the tool.
+Packages of work
+• Launch of web portal and mobile apps to
+production
+• Support and monitoring
+• Ongoing evaluation of digital tool
+Timelines
+To be completed by Jun 2026
+Phase 2b: Continued improvement
+Further housekeeping and service improvement
+work.
+Packages of work
+• E-learning Course Deployment to TURAS
+• Replicating the SSM model digitally
+• Website redesign and rebuild phase 2
+Timelines
+To be completed by end of 25/26 financial year

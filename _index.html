@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHSS Digital Roadmap - SWOT Analysis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
+            min-height: 100vh;
+            color: white;
+            line-height: 1.6;
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header h2 {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            padding: 0 1rem;
+        }
+
+        .nav-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-btn:hover,
+        .nav-btn.active {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: #fbbf24;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .swot-section {
+            display: none;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        .swot-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .swot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .swot-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .swot-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #fbbf24, #f59e0b);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .swot-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .swot-card:hover::before {
+            opacity: 1;
+        }
+
+        .swot-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #fbbf24;
+        }
+
+        .swot-card ul {
+            list-style: none;
+        }
+
+        .swot-card li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .swot-card li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: #fbbf24;
+            font-size: 0.8rem;
+        }
+
+        .strength-card {
+            border-left: 4px solid #10b981;
+        }
+
+        .weakness-card {
+            border-left: 4px solid #ef4444;
+        }
+
+        .opportunity-card {
+            border-left: 4px solid #f59e0b;
+        }
+
+        .threat-card {
+            border-left: 4px solid #8b5cf6;
+        }
+
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .overview-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .overview-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: scale(1.05);
+        }
+
+        .overview-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #fbbf24;
+        }
+
+        .overview-card p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .recommendations {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 3rem 0;
+        }
+
+        .recommendations h3 {
+            color: #fbbf24;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .rec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .rec-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #fbbf24;
+        }
+
+        .rec-item h4 {
+            color: #fbbf24;
+            margin-bottom: 0.5rem;
+        }
+
+        .conclusion {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .conclusion h3 {
+            color: #fbbf24;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .logo-placeholder {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #fbbf24, #f59e0b);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .content-container {
+                padding: 0 1rem;
+            }
+
+            .swot-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-placeholder">CHSS</div>
+        <h1>Digital Roadmap SWOT Analysis</h1>
+        <h2>Strategic Assessment for Head of Digital, Data & IT Role</h2>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-btn active" onclick="showSection('overview')">Overview</button>
+        <button class="nav-btn" onclick="showSection('strengths')">Strengths</button>
+        <button class="nav-btn" onclick="showSection('weaknesses')">Weaknesses</button>
+        <button class="nav-btn" onclick="showSection('opportunities')">Opportunities</button>
+        <button class="nav-btn" onclick="showSection('threats')">Threats</button>
+        <button class="nav-btn" onclick="showSection('recommendations')">Recommendations</button>
+    </div>
+
+    <div class="content-container">
+
+        <!-- Overview Section -->
+        <div id="overview" class="swot-section active">
+            <div class="overview-grid">
+                <div class="overview-card strength-card" onclick="showSection('strengths')">
+                    <h3>💪 Strengths</h3>
+                    <p>Solid technical foundation with D365, established digital assets, and clear strategic alignment
+                        with organizational goals.</p>
+                </div>
+                <div class="overview-card weakness-card" onclick="showSection('weaknesses')">
+                    <h3>⚠️ Weaknesses</h3>
+                    <p>System integration challenges, resource constraints, and complex governance requirements need
+                        attention.</p>
+                </div>
+                <div class="overview-card opportunity-card" onclick="showSection('opportunities')">
+                    <h3>🚀 Opportunities</h3>
+                    <p>Market leadership potential, NHS integration possibilities, and international expansion
+                        opportunities.</p>
+                </div>
+                <div class="overview-card threat-card" onclick="showSection('threats')">
+                    <h3>🛡️ Threats</h3>
+                    <p>External pressures, technology risks, and implementation challenges that require careful
+                        management.</p>
+                </div>
+            </div>
+
+            <div class="conclusion">
+                <h3>Executive Summary</h3>
+                <p>CHSS has a <strong>strong foundation</strong> and <strong>clear vision</strong> for digital
+                    transformation. The roadmap is ambitious but achievable with proper execution. Success will depend
+                    on maintaining focus on user needs, managing organizational change effectively, and leveraging the
+                    organization's strong reputation and partnerships.</p>
+            </div>
+        </div>
+
+        <!-- Strengths Section -->
+        <div id="strengths" class="swot-section">
+            <div class="swot-grid">
+                <div class="swot-card strength-card">
+                    <h3>🏗️ Solid Technical Foundation</h3>
+                    <ul>
+                        <li><strong>Microsoft D365 Implementation:</strong> Successfully deployed case management system
+                            - scalable platform capable of supporting integrated self-management tool</li>
+                        <li><strong>Established Digital Assets:</strong> Functional websites, e-learning modules, mobile
+                            apps (Talk with Me), and volunteer platform (Assemble)</li>
+                        <li><strong>Data Infrastructure:</strong> PowerBI reporting capabilities and ongoing data
+                            warehouse development</li>
+                    </ul>
+                </div>
+
+                <div class="swot-card strength-card">
+                    <h3>🎯 Strategic Alignment</h3>
+                    <ul>
+                        <li><strong>Clear Vision:</strong> Digital roadmap directly supports "No Life Half Lived"
+                            strategy with quantified goals (175,000 additional people reached)</li>
+                        <li><strong>User-Centered Approach:</strong> Strong focus on supported self-management and
+                            accessibility (WCAG 2.1 Level AA compliance)</li>
+                        <li><strong>Phased Implementation:</strong> Well-structured 3-phase approach with realistic
+                            timelines</li>
+                    </ul>
+                </div>
+
+                <div class="swot-card strength-card">
+                    <h3>🏢 Organizational Readiness</h3>
+                    <ul>
+                        <li><strong>Leadership Buy-in:</strong> Digital transformation embedded at leadership level with
+                            dedicated team structure</li>
+                        <li><strong>Service Portfolio:</strong> Diverse range of services already "digital ready" for
+                            integration</li>
+                        <li><strong>Partnership Potential:</strong> Established relationships with NHS, health boards,
+                            and potential for TURAS integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weaknesses Section -->
+        <div id="weaknesses" class="swot-section">
+            <div class="swot-grid">
+                <div class="swot-card weakness-card">
+                    <h3>🔗 System Integration Challenges</h3>
+                    <ul>
+                        <li><strong>Fragmented Data:</strong> Multiple systems not yet integrated, limiting 360-degree
+                            view of activities</li>
+                        <li><strong>Service Standardization:</strong> High variability in service delivery formats makes
+                            consistent digital experience challenging</li>
+                        <li><strong>Legacy Infrastructure:</strong> Some digital assets require significant updates to
+                            reach industry standards</li>
+                    </ul>
+                </div>
+
+                <div class="swot-card weakness-card">
+                    <h3>⚡ Resource Constraints</h3>
+                    <ul>
+                        <li><strong>Team Capacity:</strong> Ambitious roadmap requiring significant input from existing
+                            team while maintaining BAU</li>
+                        <li><strong>Change Management:</strong> Risk of overwhelming organization with digital
+                            transformation while delivering core services</li>
+                        <li><strong>Technical Debt:</strong> Multiple work packages needed to bring existing systems to
+                            required standards</li>
+                    </ul>
+                </div>
+
+                <div class="swot-card weakness-card">
+                    <h3>📋 Governance Complexity</h3>
+                    <ul>
+                        <li><strong>Data Security:</strong> Complex volunteer/service user data sharing requirements,
+                            particularly with Assemble integration</li>
+                        <li><strong>Compliance Requirements:</strong> GDPR and clinical data governance adding
+                            complexity to digital service delivery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Opportunities Section -->
+        <div id="opportunities" class="swot-section">
+            <div class="swot-grid">
+                <div class="swot-card opportunity-card">
+                    <h3>💡 Digital Health Innovation</h3>
+                    <ul>
+                        <li><strong>Market Leadership:</strong> Opportunity to deliver "world-class" supported
+                            self-management ahead of competitors</li>
+                        <li><strong>Scottish Government Alignment:</strong> Integration potential with Scot Account and
+                            national digital platforms</li>
+                        <li><strong>AI and Analytics:</strong> Data warehouse development enables advanced analytics and
+                            personalized service recommendations</li>
+                    </ul>
+                </div>
+
+                <div class="swot-card opportunity-card">
+                    <h3>🌐 Service Expansion and Integration</h3>
+                    <ul>
+                        <li><strong>Healthcare Integration:</strong> Potential for seamless GP referrals through Vision
+                            integration and wider NHS connectivity</li>
+                        <li><strong>International Revenue:</strong> Professional e-learning courses deployable globally,
+                            generating income outside UK</li>
+                        <li><strong>Cross-Condition Applications:</strong> Model expandable beyond chest, heart, and
+                            stroke to other chronic conditions</li>
+                    </ul>
+                </div>
+
+                <div class="swot-card opportunity-card">
+                    <h3>🤝 Partnership and Collaboration</h3>
+                    <ul>
+                        <li><strong>TURAS Integration:</strong> Direct pathway into NHS Scotland's professional
+                            development infrastructure</li>
+                        <li><strong>Research Opportunities:</strong> Rich data collection capabilities for service
+                            effectiveness and health outcomes research</li>
+                        <li><strong>Volunteer Enhancement:</strong> Digital tools to improve volunteer experience and
+                            expand remote volunteering</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Threats Section -->
+        <div id="threats" class="swot-section">
+            <div class="swot-grid">
+                <div class="swot-card threat-card">
+                    <h3>🌊 External Pressures</h3>
+                    <ul>
+                        <li><strong>Funding Constraints:</strong> Charity sector funding pressures potentially impacting
+                            investment in digital transformation</li>
+                        <li><strong>Regulatory Changes:</strong> Evolving data protection and clinical governance
+                            requirements</li>
+                        <li><strong>Digital Divide:</strong> Risk of excluding service users unable/unwilling to engage
+                            digitally</li>
+                    </ul>
+                </div>
+
+                <div class="swot-card threat-card">
+                    <h3>⚡ Technology and Market Risks</h3>
+                    <ul>
+                        <li><strong>Rapid Technology Change:</strong> 3-year roadmap may become outdated by changing
+                            digital health landscape</li>
+                        <li><strong>Cybersecurity Threats:</strong> Increased attack surface with expanded digital
+                            footprint and service user data</li>
+                        <li><strong>Competition:</strong> NHS and private sector developing similar digital health
+                            solutions</li>
+                    </ul>
+                </div>
+
+                <div class="swot-card threat-card">
+                    <h3>🚧 Implementation Risks</h3>
+                    <ul>
+                        <li><strong>Complexity Management:</strong> Risk of over-engineering solution leading to poor
+                            user experience</li>
+                        <li><strong>Change Resistance:</strong> Staff and service user resistance to digital-first
+                            approaches</li>
+                        <li><strong>Integration Failures:</strong> Technical challenges in connecting diverse systems
+                            and maintaining data integrity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendations Section -->
+        <div id="recommendations" class="swot-section">
+            <div class="recommendations">
+                <h3>🎯 Key Recommendations</h3>
+                <div class="rec-grid">
+                    <div class="rec-item">
+                        <h4>Immediate Priorities</h4>
+                        <ul>
+                            <li>Strengthen Project Governance with clear change management processes</li>
+                            <li>Implement robust user testing framework throughout development</li>
+                            <li>Embed cybersecurity considerations from project inception</li>
+                        </ul>
+                    </div>
+
+                    <div class="rec-item">
+                        <h4>Strategic Focus Areas</h4>
+                        <ul>
+                            <li>Ensure digital inclusion remains central to all developments</li>
+                            <li>Prioritize features that deliver immediate value to users and staff</li>
+                            <li>Leverage NHS relationships and government digital initiatives</li>
+                        </ul>
+                    </div>
+
+                    <div class="rec-item">
+                        <h4>Risk Mitigation</h4>
+                        <ul>
+                            <li>Maintain non-digital pathways alongside digital transformation</li>
+                            <li>Invest in digital skills development across the organization</li>
+                            <li>Build flexibility into roadmap to adapt to changing circumstances</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conclusion">
+                <h3>Strategic Conclusion</h3>
+                <p>The opportunity to deliver truly innovative supported self-management tools positions CHSS as a
+                    potential leader in digital health for chronic conditions management. Success requires balancing
+                    ambition with pragmatism, ensuring user needs remain central throughout the transformation.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.swot-section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Remove active class from all nav buttons
+            const navButtons = document.querySelectorAll('.nav-btn');
+            navButtons.forEach(btn => btn.classList.remove('active'));
+
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+
+        // Add some interactive effects
+        document.addEventListener('DOMContentLoaded', function () {
+            const cards = document.querySelectorAll('.swot-card, .overview-card');
+
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateY(-5px) scale(1.02)';
+                });
+
+                card.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

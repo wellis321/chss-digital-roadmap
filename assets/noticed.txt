@@ -1,0 +1,39 @@
+What you noticed (gaps/risks)
+•	BAU vs change: Plan is ambitious and underestimates BAU pull; discovery/user-research time isn’t explicitly budgeted.
+•	Skills mismatch: Org chart shows content/data/IT, but no product & engineering capability to actually build and run the self-management (MyCHSS) tool.
+•	Timelines: Too “friction-free”—lots of workshops, story-mapping, and testing needed before an MVP.
+•	Systems diagrams: Weak at showing the Data Warehouse as the hub and the real data flows.
+•	Sustainability & paperless: Not called out as cross-cutting outcomes.
+•	Work Packages: Numbering (WP2xx…) implies a larger programme with a separate WP register/backlog not shown.
+•	Learning tech: Leaning toward TURAS/SCORM may limit learning beyond an LMS; no plan for xAPI/cmi5 or an LRS.
+•	AI: No concrete track for MCP servers, RAG, or safe AI use.
+What you proposed (solutions)
+•	Add a Discovery runway (6–8 weeks) before main build to lock story map, MVP (≤8 capabilities), DPIA outline, and research plan.
+•	Stand up environments & CI/CD early: Dev → Test/UAT → Staging → Prod; IaC, secrets, non-prod data policy, a11y/perf/security gates.
+•	Create a MyCHSS product squad: Product Manager, Delivery, Tech Lead, Frontend, Mobile, Backend/Integration, QA/Automation, UX/Service Design.
+•	Re-draw architecture: Operational systems → Warehouse/Marts (hub) → two outputs: Power BI and read-only feature APIs back into MyCHSS; show consent/governance across the flow.
+•	Add cross-cutting outcomes:
+o	Sustainability by design (performance budgets, green FinOps/CO₂ dashboard, data-lifecycle/retention).
+o	Paperless by default (targets for print reduction, e-sign on top processes, digitise top 20 forms).
+•	Work Package hygiene: Ask for WP register/board (scope, owners, dates, deps), dependency map, RAID, budget, and stage-gate checklists.
+•	AI track:
+o	MCP server exposing approved tools/data with RBAC and audit.
+o	RAG over curated content (citations, DPIA, red-team).
+o	Low-risk, opt-in MyCHSS features post-launch (summaries, checklists, goal suggestions), behind feature flags.
+•	Learning stack shift:
+o	Prefer xAPI / cmi5 + LRS (e.g., Learning Locker on Azure) so staff, volunteers, and service users can learn anywhere.
+o	Use Viva Learning as the discovery/assignment front door for staff.
+o	Bridge SCORM-only platforms with Dispatch/translation if needed.
+How you’d de-risk the dates (phased)
+•	Alpha (Nov–Jan): 3–4 MVP slices (Auth/Profile/Consent, Self-Referral, Appointments) with weekly usability.
+•	Beta (Feb–Mar): Regional pilot; a11y/perf/security checks; readiness checklist.
+•	Rollout (Apr–Jun): Dark launch behind flags → staged org-wide release.
+Governance & measures
+•	DoD gates: Security (pen-test/OWASP), Accessibility (WCAG AA + user testing), Data (consent/retention, no PII in non-prod), Operations (runbooks, error budgets).
+•	OKRs: Adoption (registrations, % digital referrals), Engagement (course starts/completions, goal activity), Outcomes (PROMs/PREMs, time-to-support), Ops/Data (services on D365, data quality, pen-test fixes on time).
+Handy lines for the panel
+•	“We’ll separate run from change and ring-fence BAU so delivery doesn’t drift.”
+•	“I’ll stand up a product & engineering squad to actually build and run MyCHSS, with Data and IT as enabling teams.”
+•	“We’ll launch safely, not suddenly—alpha slices, regional beta, then flagged rollout.”
+•	“For learning, we’ll adopt xAPI/cmi5 + an LRS so volunteers/service users can learn anywhere; Viva Learning remains the front door for staff.”
+•	“AI will be governed: MCP for safe tools, RAG with citations, and opt-in features only.”

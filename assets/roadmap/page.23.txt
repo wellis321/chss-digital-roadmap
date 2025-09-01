@@ -1,0 +1,13 @@
+DEVELOPING OUR
+WEBSITE
+Our website is a key communications channel and way for people to find
+out more about about CHSS and our services. We also have our online
+shop and other websites that host our eLearning modules.
+We’ve made some great improvements to our web infrastructure and
+security, and we’re continuing to develop the look and feel of our websites
+by updating existing page templates and creating new ones.
+As our roadmap develops, we’ll consider all options for integrations –
+including with our learning management system and self management
+app. We’ll work with other teams to improve user journeys and ensure
+the design is consistent with our other digital offerings. And our eLearning
+website content will be migrated to our learning management system.

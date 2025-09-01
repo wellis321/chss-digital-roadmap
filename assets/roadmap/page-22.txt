@@ -1,0 +1,21 @@
+GOVERNANCE AND
+MONITORING
+It’s important that we ensure good governance throughout the
+implementation of our digital roadmap.
+This includes the monitoring and delivery of the roadmap itself – by using
+project management software to track progress and deliverables, and
+ensuring it aligns with our annual team planning, actions and targets.
+But it also means that we will follow good practice across data and cyber
+security, including getting relevant certifications and undertaking regular
+external testing.
+As we adapt and develop our digital platforms and user journeys, we’ll
+ensure we collect appropriate consents so that we’re transparent with how
+we manage and use data. We will need to consider how we handle having
+service user-facing records as we develop our self management app – but
+this isn’t a situation unique to CHSS, and others will be having the same
+conversations as service user records universally become more digitised.
+Monitoring of our roadmap delivery
+At each stage of the roadmap, we will be reviewing our progress to
+ensure that we are delivering the outcomes expected. We will engage
+with stakeholders throughout, and have built in milestones for external
+users to test and feedback on the work we're doing.

@@ -1,0 +1,32 @@
+PHASE 3: WORK PACKAGES APR 26 ONWARDS
+Future state design
+WP301 Launch of first features set of web portal and
+mobile apps to production
+Initial launch of MyCHSS digital tool as a whole
+organisation service. System readiness and roll out
+across infrastructure.
+WP302: Support and Monitoring
+Support and monitoring of system and bug fixes/
+updates as required. Usage monitoring and response to
+any issues.
+WP303: Further Feature set build of SSM tool
+Continued development of digital tool and completion
+of any features slated for v2.0
+WP304: User feedback collection and design exercise
+of SSM tool
+Curated feedback exercise with service users to
+understand effectiveness of tool and respond to any
+field issues or opportunities.
+WP 30X
+Things change quickly in digital, and it gets harder
+to predict priorities and activities the further in the
+future we go.
+As with phase 2, future packages will be defined
+throughout the process. At phase 3 a further
+review will need to be taken of CHSS’s direction
+as well as changes in the data, service user
+records, and self management space.
+This will allow us to understand if any adaptations
+need to be made to CHSS’s direction of travel or if
+any opportunities have arisen that weren’t evident
+when starting this journey.

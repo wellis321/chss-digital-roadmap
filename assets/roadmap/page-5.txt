@@ -1,0 +1,41 @@
+WHAT THE CHANGE
+WILL ALLOW
+Delivering a digital tool for CHSS is about amplifying and increasing the reach of our existing services and making
+the work of our team even more impactful. We’ve just started a full co-design exercise but we’re envisaging:
+Service recommendations
+Matching an individual’s circumstances and profile to
+CHSS services and giving rich recommendations to
+services that would benefit them.
+Progress tracking
+Ability to track progress through services and view
+progress. Course completion, group attendance,
+Kindness call progress and goal/step completion.
+Self-referral route
+The ability for an individual to self-refer into CHSS and
+start accessing services and resources immediately,
+empowering them to take ownership of their condition
+or prevention
+Self-service offering
+The ability to provide digital versions of our face-to-
+face offerings, opening up access to those who cannot
+attend sessions due to location or other factors.
+Service user power and transparency
+An ability for individuals to view and manage their
+information and permissions.
+Appointment management
+An ability for individuals to view appointment
+schedules, book or change appointments and
+manage their care.
+Keep people coming back
+Through the use of push notifications and
+gamification we can help motivate people to stay
+on track with their goals and amplify the time in-
+between appointments with the CHSS team.
+Provide live reporting
+Live, dissectible reporting across the organisation.
+Giving visibility of service usage, service user
+engagement, volunteering and more.
+Integration with wider healthcare
+A system that’s setup to integrate with wider healthcare systems, such as enabling faster, more direct referrals
+from hospitals and GPs. The plans in this roadmap will enable us to connect seamlessly with partner systems
+for a more efficient flow of information and allow us to further demonstrate the value we add.

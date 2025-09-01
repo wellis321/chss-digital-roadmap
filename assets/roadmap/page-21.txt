@@ -1,0 +1,23 @@
+INTEGRATING
+FURTHER
+One of the benefits of embracing digital is the ability to integrate with
+external services and any development can be taken with future
+integrations in mind.
+Two examples are:
+Health and social care referral
+For example, we can build a system that would allow pre-loaded referrals
+and integration with services like Vision, used by GPs across Scotland. This
+would allow GPs to potentially select a number of CHSS services they
+recommend for their service user and push a referral link that could allow
+that CHSS to invite that individual to the self management app with their
+basic details and recommended services already preloaded.
+Government scot account
+Scottish government are developing their ‘Scot account’ which offers
+individuals a single account to access services and hold their digital record.
+It may be possible to integrate with Scot account to allow a straightforward
+and joined up service aligned with Scottish Government’s development.
+It would also allow for basic health information to be shared and allow
+CHSS to access valuable information on the individual’s health and
+wellbeing to help tailor service and provide better care. In addition this
+would follow the principal of ‘tell your story once’ for service users to ease
+friction on referral routes and service access.
