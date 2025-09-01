@@ -388,6 +388,68 @@
             color: #1e293b;
         }
 
+        .strategic-info-box {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 3rem 0;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+
+        .strategic-info-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e91e63, #2563eb, #0891b2);
+            border-radius: 20px 20px 0 0;
+        }
+
+        .strategic-info-box h4 {
+            color: #1e293b;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .strategic-info-box h4 svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+        .strategic-info-box ul {
+            list-style: none;
+            margin: 0;
+        }
+
+        .strategic-info-box li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #475569;
+            line-height: 1.6;
+        }
+
+        .strategic-info-box li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            font-size: 0.8rem;
+            color: #e91e63;
+        }
+
+        .strategic-info-box strong {
+            color: #1e293b;
+        }
+
         .chss-logo {
             width: 80px;
             height: 80px;
@@ -568,7 +630,8 @@
                         <li><strong>Microsoft D365 Implementation:</strong> Successfully deployed case management system
                             - scalable platform capable of supporting integrated self-management tool</li>
                         <li><strong>Established Digital Assets:</strong> Functional websites, e-learning modules, mobile
-                            app framework (Talk with Me - ready for redeployment), and volunteer platform (Assemble)
+                            app framework (Talk with Me - under evaluation for redeployment), and volunteer platform
+                            (Assemble)
                         </li>
                         <li><strong>Data Infrastructure:</strong> PowerBI reporting capabilities and ongoing data
                             warehouse development</li>
@@ -601,7 +664,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
                         </svg>
-                        organisational Readiness
+                        <Opt></Opt>rganisational Readiness
                     </h3>
                     <ul>
                         <li><strong>Leadership Buy-in:</strong> Digital transformation embedded at leadership level with
@@ -613,448 +676,517 @@
                     </ul>
                 </div>
             </div>
-        </div>
 
-        <!-- Weaknesses Section -->
-        <div id="weaknesses" class="swot-section">
-            <div class="section-header">
-                <h2 style="color: #ef4444;">
+            <div class="strategic-info-box">
+                <h4>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                            d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
                     </svg>
-                    Weaknesses
-                </h2>
-                <p>Areas requiring attention and improvement to ensure successful implementation</p>
+                    Strategic Context: Foundation Strengths
+                </h4>
+                <ul>
+                    <li><strong>Legacy Infrastructure Context:</strong> Website backend needs webpack/modern tooling,
+                        e-learning platform requires re-authoring, and mobile app framework needs evaluation before
+                        redeployment</li>
+                    <li><strong>Integration Capabilities:</strong> Multiple systems (D365, Assemble, financial systems)
+                        require careful integration planning and governance</li>
+                    <li><strong>Development Practices:</strong> Current practices need modernisation to industry
+                        standards
+                        with CI/CD pipelines and DevOps integration</li>
+                    <li><strong>Technical Debt Management:</strong> Multiple work packages needed to bring existing
+                        systems to required standards while maintaining service delivery</li>
+                    <li><strong>Service Portfolio Readiness:</strong> E-learning modules, Assemble volunteer platform,
+                        and D365 case management data are already digitized and ready for integration</li>
+                    <li><strong>Data Infrastructure:</strong> PowerBI reporting capabilities and ongoing data warehouse
+                        development provide foundation for advanced analytics and insights</li>
             </div>
 
-            <div class="swot-grid">
-                <div class="swot-card weakness-card">
-                    <h3>
+            <!-- Weaknesses Section -->
+            <div id="weaknesses" class="swot-section">
+                <div class="section-header">
+                    <h2 style="color: #ef4444;">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9h2.25a2.25 2.25 0 0 0 2.25-2.25v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25v2.25A2.25 2.25 0 0 0 6 19.5Zm9-9h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H15a2.25 2.25 0 0 0-2.25 2.25v2.25A2.25 2.25 0 0 0 15 10.5Z" />
+                                d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
                         </svg>
-                        System Integration Challenges
-                    </h3>
-                    <ul>
-                        <li><strong>Fragmented Data:</strong> Multiple systems not yet integrated, limiting 360-degree
-                            view of activities</li>
-                        <li><strong>Service Standardization:</strong> High variability in service delivery formats makes
-                            consistent digital experience challenging</li>
-                        <li><strong>Legacy Infrastructure:</strong> Some digital assets require significant updates to
-                            reach industry standards</li>
-                    </ul>
+                        Weaknesses
+                    </h2>
+                    <p>Areas requiring attention and improvement to ensure successful implementation</p>
                 </div>
 
-                <div class="swot-card weakness-card">
-                    <h3>
+                <div class="swot-grid">
+                    <div class="swot-card weakness-card">
+                        <h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9h2.25a2.25 2.25 0 0 0 2.25-2.25v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25v2.25A2.25 2.25 0 0 0 6 19.5Zm9-9h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H15a2.25 2.25 0 0 0-2.25 2.25v2.25A2.25 2.25 0 0 0 15 10.5Z" />
+                            </svg>
+                            System Integration Challenges
+                        </h3>
+                        <ul>
+                            <li><strong>Fragmented Data:</strong> Multiple systems not yet integrated, limiting
+                                360-degree
+                                view of activities</li>
+                            <li><strong>Service Standardisation:</strong> High variability in service delivery formats
+                                makes
+                                consistent digital experience challenging</li>
+                            <li><strong>Legacy Infrastructure:</strong> Some digital assets require significant updates
+                                to
+                                reach industry standards</li>
+                        </ul>
+                    </div>
+
+                    <div class="swot-card weakness-card">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.5 2.54l2.6 1.53c.56-1.24.9-2.62.9-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.05.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.06-4.09l-2.6-1.53C16.17 17.98 14.21 19 12 19z" />
+                            </svg>
+                            Resource Constraints
+                        </h3>
+                        <ul>
+                            <li><strong>Team Capacity:</strong> Ambitious roadmap requiring significant input from
+                                existing
+                                team while maintaining BAU</li>
+                            <li><strong>Change Management:</strong> Risk of overwhelming organisation with digital
+                                transformation while delivering core services</li>
+                            <li><strong>Technical Debt:</strong> Multiple work packages needed to bring existing systems
+                                to
+                                required standards</li>
+                        </ul>
+                    </div>
+
+                    <div class="swot-card weakness-card">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
+                            Governance Complexity
+                        </h3>
+                        <ul>
+                            <li><strong>Data Security:</strong> Complex volunteer/service user data sharing
+                                requirements,
+                                particularly with Assemble integration</li>
+                            <li><strong>Compliance Requirements:</strong> GDPR and clinical data governance adding
+                                complexity to digital service delivery</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Opportunities Section -->
+            <div id="opportunities" class="swot-section">
+                <div class="section-header">
+                    <h2 style="color: #e91e63;">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" />
+                            <path
+                                d="M19 15L19.74 17.74L22.5 18.5L19.74 19.26L19 22L18.26 19.26L15.5 18.5L18.26 17.74L19 15Z" />
+                            <path d="M5 6L5.74 8.74L8.5 9.5L5.74 10.26L5 13L4.26 10.26L1.5 9.5L4.26 8.74L5 6Z" />
+                        </svg>
+                        Opportunities
+                    </h2>
+                    <p>Strategic possibilities that could drive significant growth and impact</p>
+                </div>
+
+                <div class="swot-grid">
+                    <div class="swot-card opportunity-card">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" />
+                            </svg>
+                            Digital Health Innovation
+                        </h3>
+                        <ul>
+                            <li><strong>Service Excellence:</strong> Opportunity to deliver "world-class" supported
+                                self-management tools that set new standards in digital health</li>
+                            <li><strong>Scottish Government Alignment:</strong> Integration potential with Scot Account
+                                and
+                                national digital platforms</li>
+                            <li><strong>AI and Analytics:</strong> Data warehouse development enables advanced analytics
+                                and
+                                personalized service recommendations</li>
+                        </ul>
+                    </div>
+
+                    <div class="swot-card opportunity-card">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" />
+                            </svg>
+                            Service Expansion and Integration
+                        </h3>
+                        <ul>
+                            <li><strong>Healthcare Integration:</strong> Potential for seamless GP referrals through
+                                Vision
+                                integration and wider NHS connectivity</li>
+                            <li><strong>International Impact:</strong> Professional e-learning courses deployable
+                                globally,
+                                extending CHSS's reach and influence internationally</li>
+                            <li><strong>Cross-Condition Applications:</strong> Model expandable beyond chest, heart, and
+                                stroke to other chronic conditions</li>
+                        </ul>
+                    </div>
+
+                    <div class="swot-card opportunity-card">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" />
+                            </svg>
+                            Partnership and Collaboration
+                        </h3>
+                        <ul>
+                            <li><strong>TURAS Integration:</strong> Direct pathway into NHS Scotland's professional
+                                development infrastructure</li>
+                            <li><strong>Research Opportunities:</strong> Rich data collection capabilities for service
+                                effectiveness and health outcomes research</li>
+                            <li><strong>Volunteer Enhancement:</strong> Digital tools to improve volunteer experience
+                                and
+                                expand remote volunteering</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Threats Section -->
+            <div id="threats" class="swot-section">
+                <div class="section-header">
+                    <h2 style="color: #2563eb;">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path
-                                d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.5 2.54l2.6 1.53c.56-1.24.9-2.62.9-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.05.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.06-4.09l-2.6-1.53C16.17 17.98 14.21 19 12 19z" />
+                                d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" />
                         </svg>
-                        Resource Constraints
-                    </h3>
-                    <ul>
-                        <li><strong>Team Capacity:</strong> Ambitious roadmap requiring significant input from existing
-                            team while maintaining BAU</li>
-                        <li><strong>Change Management:</strong> Risk of overwhelming organisation with digital
-                            transformation while delivering core services</li>
-                        <li><strong>Technical Debt:</strong> Multiple work packages needed to bring existing systems to
-                            required standards</li>
-                    </ul>
+                        Threats
+                    </h2>
+                    <p>External and internal risks that could impact successful delivery</p>
                 </div>
 
-                <div class="swot-card weakness-card">
-                    <h3>
+                <div class="swot-grid">
+                    <div class="swot-card threat-card">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" />
+                            </svg>
+                            External Pressures
+                        </h3>
+                        <ul>
+                            <li><strong>Funding Constraints:</strong> Charity sector funding pressures potentially
+                                impacting
+                                investment in digital transformation</li>
+                            <li><strong>Regulatory Changes:</strong> Evolving data protection and clinical governance
+                                requirements</li>
+                            <li><strong>Digital Divide:</strong> Risk of excluding service users unable/unwilling to
+                                engage
+                                digitally</li>
+                        </ul>
+                    </div>
+
+                    <div class="swot-card threat-card">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" />
+                            </svg>
+                            Technology and Market Risks
+                        </h3>
+                        <ul>
+                            <li><strong>Rapid Technology Change:</strong> 3-year roadmap may become outdated by changing
+                                digital health landscape</li>
+                            <li><strong>Cybersecurity Threats:</strong> Increased attack surface with expanded digital
+                                footprint and service user data</li>
+                            <li><strong>External Developments:</strong> NHS and private sector developing similar
+                                digital
+                                health
+                                solutions that may impact service differentiation</li>
+                        </ul>
+                    </div>
+
+                    <div class="swot-card threat-card">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" />
+                            </svg>
+                            Implementation Risks
+                        </h3>
+                        <ul>
+                            <li><strong>Complexity Management:</strong> Risk of over-engineering solution leading to
+                                poor
+                                user experience</li>
+                            <li><strong>Change Resistance:</strong> Staff and service user resistance to digital-first
+                                approaches</li>
+                            <li><strong>Integration Failures:</strong> Technical challenges in connecting diverse
+                                systems
+                                and maintaining data integrity</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Recommendations Section -->
+            <div id="recommendations" class="swot-section">
+                <div class="section-header">
+                    <h2 style="color: #e91e63;">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path
                                 d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                         </svg>
-                        Governance Complexity
+                        Strategic Recommendations
+                    </h2>
+                    <p>Actionable insights to maximize opportunities and mitigate risks</p>
+                </div>
+
+                <div class="recommendations">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                        </svg>
+                        Critical Gap Analysis & Solutions
                     </h3>
-                    <ul>
-                        <li><strong>Data Security:</strong> Complex volunteer/service user data sharing requirements,
-                            particularly with Assemble integration</li>
-                        <li><strong>Compliance Requirements:</strong> GDPR and clinical data governance adding
-                            complexity to digital service delivery</li>
-                    </ul>
+                    <div class="rec-grid">
+                        <div class="rec-item">
+                            <h4>🚀 Modern Engineering Foundation</h4>
+                            <ul>
+                                <li><strong>CI/CD Pipeline:</strong> Implement Dev → Test → UAT → Staging → Prod
+                                    environments with Infrastructure as Code</li>
+                                <li><strong>DevOps Integration:</strong> Automated testing, security gates, and
+                                    deployment
+                                    pipelines</li>
+                                <li><strong>Modern Architecture:</strong> Data Warehouse as hub with read-only APIs and
+                                    proper governance flows</li>
+                                <li><strong>Environment Strategy:</strong> Non-prod data policies, secrets management,
+                                    and
+                                    automated provisioning</li>
+                            </ul>
+                        </div>
+
+                        <div class="rec-item">
+                            <h4>👥 Team & Skills Strategy</h4>
+                            <ul>
+                                <li><strong>Product Squad:</strong> Dedicated team with Product Manager, Tech Lead,
+                                    Frontend/Mobile/Backend engineers</li>
+                                <li><strong>Skills Development:</strong> Modern development practices, cloud-native
+                                    technologies, and agile methodologies</li>
+                                <li><strong>BAU vs Change:</strong> Ring-fence delivery teams from business-as-usual to
+                                    prevent scope drift</li>
+                                <li><strong>Cross-functional Collaboration:</strong> Data, IT, and Product teams working
+                                    as
+                                    enabling functions</li>
+                            </ul>
+                        </div>
+
+                        <div class="rec-item">
+                            <h4>⏱️ Realistic Timeline & Risk Management</h4>
+                            <ul>
+                                <li><strong>Discovery Phase:</strong> 6-8 weeks for story mapping, MVP definition, and
+                                    research planning</li>
+                                <li><strong>Phased Delivery:</strong> Alpha (3-4 MVP slices) → Beta (regional pilot) →
+                                    Rollout (staged release)</li>
+                                <li><strong>Risk Mitigation:</strong> Weekly usability testing,
+                                    accessibility/performance
+                                    gates, and feature flags</li>
+                                <li><strong>Governance:</strong> Definition of Done gates for security, accessibility,
+                                    data,
+                                    and operations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recommendations">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                        </svg>
+                        Innovation & Modern Technologies
+                    </h3>
+                    <div class="rec-grid">
+                        <div class="rec-item">
+                            <h4>🤖 AI Integration Strategy</h4>
+                            <ul>
+                                <li><strong>MCP Servers:</strong> Expose approved tools/data with RBAC and comprehensive
+                                    audit trails</li>
+                                <li><strong>RAG Implementation:</strong> Retrieval-Augmented Generation over curated
+                                    content
+                                    with citations and DPIA</li>
+                                <li><strong>Safe AI Features:</strong> Low-risk, opt-in features post-launch (summaries,
+                                    checklists, goal suggestions)</li>
+                                <li><strong>Feature Flags:</strong> Controlled rollout of AI capabilities with user
+                                    consent
+                                    and monitoring</li>
+                            </ul>
+                        </div>
+
+                        <div class="rec-item">
+                            <h4>📚 Modern Learning Technology</h4>
+                            <ul>
+                                <li><strong>xAPI/cmi5 Standards:</strong> Move beyond SCORM to enable learning anywhere,
+                                    anytime</li>
+                                <li><strong>Learning Record Store:</strong> Centralized learning analytics and progress
+                                    tracking</li>
+                                <li><strong>Viva Learning Integration:</strong> Staff discovery and assignment front
+                                    door
+                                </li>
+                                <li><strong>Multi-platform Support:</strong> Bridge traditional LMS platforms with
+                                    modern
+                                    learning experiences</li>
+                            </ul>
+                        </div>
+
+                        <div class="rec-item">
+                            <h4>🛡️ Quality & Governance</h4>
+                            <ul>
+                                <li><strong>Poka Yoke Principles:</strong> Error prevention and user experience
+                                    optimization
+                                    from day one</li>
+                                <li><strong>Sustainability by Design:</strong> Performance budgets, green FinOps, and
+                                    data
+                                    lifecycle management</li>
+                                <li><strong>Paperless Transformation:</strong> E-signature adoption, form digitization,
+                                    and
+                                    print reduction targets</li>
+                                <li><strong>Cross-cutting Outcomes:</strong> Accessibility, security, and compliance
+                                    built
+                                    into every deliverable</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recommendations">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                        </svg>
+                        Success Metrics & Governance
+                    </h3>
+                    <div class="rec-grid">
+                        <div class="rec-item">
+                            <h4>📊 Key Performance Indicators</h4>
+                            <ul>
+                                <li><strong>Adoption Metrics:</strong> User registrations, digital referral percentages,
+                                    and
+                                    platform engagement</li>
+                                <li><strong>Learning Outcomes:</strong> Course completion rates, goal achievement, and
+                                    knowledge retention</li>
+                                <li><strong>Operational Excellence:</strong> Service delivery times, data quality
+                                    scores,
+                                    and system uptime</li>
+                                <li><strong>User Experience:</strong> Accessibility compliance, performance benchmarks,
+                                    and
+                                    user satisfaction scores</li>
+                            </ul>
+                        </div>
+
+                        <div class="rec-item">
+                            <h4>🔒 Security & Compliance</h4>
+                            <ul>
+                                <li><strong>Cyber Essentials Plus:</strong> Enhanced certification with regular
+                                    penetration
+                                    testing</li>
+                                <li><strong>Data Governance:</strong> Consent management, retention policies, and PII
+                                    protection</li>
+                                <li><strong>Privacy by Design:</strong> DPIA implementation and GDPR compliance
+                                    throughout
+                                </li>
+                                <li><strong>Audit Trails:</strong> Comprehensive logging and monitoring for all user
+                                    interactions</li>
+                            </ul>
+                        </div>
+
+                        <div class="rec-item">
+                            <h4>🔄 Continuous Improvement</h4>
+                            <ul>
+                                <li><strong>Agile Delivery:</strong> Sprint-based development with regular stakeholder
+                                    feedback</li>
+                                <li><strong>User Research:</strong> Ongoing usability testing and user experience
+                                    optimization</li>
+                                <li><strong>Technology Evolution:</strong> Regular technology stack reviews and
+                                    modernisation</li>
+                                <li><strong>Team Development:</strong> Continuous learning and skills development
+                                    programs
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conclusion">
+                    <h3>Strategic Leadership Vision</h3>
+                    <p>This enhanced digital transformation strategy positions CHSS to deliver <strong>world-class
+                            supported
+                            self-management</strong> while building modern, scalable, and sustainable digital
+                        capabilities.
+                        The approach balances innovation with pragmatism, ensuring we deliver value quickly while
+                        establishing the foundation for long-term success. By addressing the critical gaps in the
+                        current
+                        roadmap and implementing modern best practices, CHSS can become a leader in digital health
+                        innovation.</p>
                 </div>
             </div>
+
         </div>
 
-        <!-- Opportunities Section -->
-        <div id="opportunities" class="swot-section">
-            <div class="section-header">
-                <h2 style="color: #e91e63;">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" />
-                        <path
-                            d="M19 15L19.74 17.74L22.5 18.5L19.74 19.26L19 22L18.26 19.26L15.5 18.5L18.26 17.74L19 15Z" />
-                        <path d="M5 6L5.74 8.74L8.5 9.5L5.74 10.26L5 13L4.26 10.26L1.5 9.5L4.26 8.74L5 6Z" />
-                    </svg>
-                    Opportunities
-                </h2>
-                <p>Strategic possibilities that could drive significant growth and impact</p>
-            </div>
+        <script>
+            function showSection(sectionId) {
+                // Hide all sections
+                const sections = document.querySelectorAll('.swot-section');
+                sections.forEach(section => section.classList.remove('active'));
 
-            <div class="swot-grid">
-                <div class="swot-card opportunity-card">
-                    <h3>
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" />
-                        </svg>
-                        Digital Health Innovation
-                    </h3>
-                    <ul>
-                        <li><strong>Service Excellence:</strong> Opportunity to deliver "world-class" supported
-                            self-management tools that set new standards in digital health</li>
-                        <li><strong>Scottish Government Alignment:</strong> Integration potential with Scot Account and
-                            national digital platforms</li>
-                        <li><strong>AI and Analytics:</strong> Data warehouse development enables advanced analytics and
-                            personalized service recommendations</li>
-                    </ul>
-                </div>
+                // Remove active class from all nav buttons
+                const navButtons = document.querySelectorAll('.nav-btn');
+                navButtons.forEach(btn => btn.classList.remove('active'));
 
-                <div class="swot-card opportunity-card">
-                    <h3>
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" />
-                        </svg>
-                        Service Expansion and Integration
-                    </h3>
-                    <ul>
-                        <li><strong>Healthcare Integration:</strong> Potential for seamless GP referrals through Vision
-                            integration and wider NHS connectivity</li>
-                        <li><strong>International Impact:</strong> Professional e-learning courses deployable globally,
-                            extending CHSS's reach and influence internationally</li>
-                        <li><strong>Cross-Condition Applications:</strong> Model expandable beyond chest, heart, and
-                            stroke to other chronic conditions</li>
-                    </ul>
-                </div>
+                // Show selected section
+                document.getElementById(sectionId).classList.add('active');
 
-                <div class="swot-card opportunity-card">
-                    <h3>
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" />
-                        </svg>
-                        Partnership and Collaboration
-                    </h3>
-                    <ul>
-                        <li><strong>TURAS Integration:</strong> Direct pathway into NHS Scotland's professional
-                            development infrastructure</li>
-                        <li><strong>Research Opportunities:</strong> Rich data collection capabilities for service
-                            effectiveness and health outcomes research</li>
-                        <li><strong>Volunteer Enhancement:</strong> Digital tools to improve volunteer experience and
-                            expand remote volunteering</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                // Add active class to clicked button
+                event.target.classList.add('active');
+            }
 
-        <!-- Threats Section -->
-        <div id="threats" class="swot-section">
-            <div class="section-header">
-                <h2 style="color: #2563eb;">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" />
-                    </svg>
-                    Threats
-                </h2>
-                <p>External and internal risks that could impact successful delivery</p>
-            </div>
+            // Add smooth animations and interactions
+            document.addEventListener('DOMContentLoaded', function () {
+                const cards = document.querySelectorAll('.swot-card, .overview-card');
 
-            <div class="swot-grid">
-                <div class="swot-card threat-card">
-                    <h3>
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" />
-                        </svg>
-                        External Pressures
-                    </h3>
-                    <ul>
-                        <li><strong>Funding Constraints:</strong> Charity sector funding pressures potentially impacting
-                            investment in digital transformation</li>
-                        <li><strong>Regulatory Changes:</strong> Evolving data protection and clinical governance
-                            requirements</li>
-                        <li><strong>Digital Divide:</strong> Risk of excluding service users unable/unwilling to engage
-                            digitally</li>
-                    </ul>
-                </div>
-
-                <div class="swot-card threat-card">
-                    <h3>
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" />
-                        </svg>
-                        Technology and Market Risks
-                    </h3>
-                    <ul>
-                        <li><strong>Rapid Technology Change:</strong> 3-year roadmap may become outdated by changing
-                            digital health landscape</li>
-                        <li><strong>Cybersecurity Threats:</strong> Increased attack surface with expanded digital
-                            footprint and service user data</li>
-                        <li><strong>External Developments:</strong> NHS and private sector developing similar digital
-                            health
-                            solutions that may impact service differentiation</li>
-                    </ul>
-                </div>
-
-                <div class="swot-card threat-card">
-                    <h3>
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" />
-                        </svg>
-                        Implementation Risks
-                    </h3>
-                    <ul>
-                        <li><strong>Complexity Management:</strong> Risk of over-engineering solution leading to poor
-                            user experience</li>
-                        <li><strong>Change Resistance:</strong> Staff and service user resistance to digital-first
-                            approaches</li>
-                        <li><strong>Integration Failures:</strong> Technical challenges in connecting diverse systems
-                            and maintaining data integrity</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Recommendations Section -->
-        <div id="recommendations" class="swot-section">
-            <div class="section-header">
-                <h2 style="color: #e91e63;">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg>
-                    Strategic Recommendations
-                </h2>
-                <p>Actionable insights to maximize opportunities and mitigate risks</p>
-            </div>
-
-            <div class="recommendations">
-                <h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg>
-                    Critical Gap Analysis & Solutions
-                </h3>
-                <div class="rec-grid">
-                    <div class="rec-item">
-                        <h4>🚀 Modern Engineering Foundation</h4>
-                        <ul>
-                            <li><strong>CI/CD Pipeline:</strong> Implement Dev → Test → UAT → Staging → Prod
-                                environments with Infrastructure as Code</li>
-                            <li><strong>DevOps Integration:</strong> Automated testing, security gates, and deployment
-                                pipelines</li>
-                            <li><strong>Modern Architecture:</strong> Data Warehouse as hub with read-only APIs and
-                                proper governance flows</li>
-                            <li><strong>Environment Strategy:</strong> Non-prod data policies, secrets management, and
-                                automated provisioning</li>
-                        </ul>
-                    </div>
-
-                    <div class="rec-item">
-                        <h4>👥 Team & Skills Strategy</h4>
-                        <ul>
-                            <li><strong>Product Squad:</strong> Dedicated team with Product Manager, Tech Lead,
-                                Frontend/Mobile/Backend engineers</li>
-                            <li><strong>Skills Development:</strong> Modern development practices, cloud-native
-                                technologies, and agile methodologies</li>
-                            <li><strong>BAU vs Change:</strong> Ring-fence delivery teams from business-as-usual to
-                                prevent scope drift</li>
-                            <li><strong>Cross-functional Collaboration:</strong> Data, IT, and Product teams working as
-                                enabling functions</li>
-                        </ul>
-                    </div>
-
-                    <div class="rec-item">
-                        <h4>⏱️ Realistic Timeline & Risk Management</h4>
-                        <ul>
-                            <li><strong>Discovery Phase:</strong> 6-8 weeks for story mapping, MVP definition, and
-                                research planning</li>
-                            <li><strong>Phased Delivery:</strong> Alpha (3-4 MVP slices) → Beta (regional pilot) →
-                                Rollout (staged release)</li>
-                            <li><strong>Risk Mitigation:</strong> Weekly usability testing, accessibility/performance
-                                gates, and feature flags</li>
-                            <li><strong>Governance:</strong> Definition of Done gates for security, accessibility, data,
-                                and operations</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="recommendations">
-                <h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg>
-                    Innovation & Modern Technologies
-                </h3>
-                <div class="rec-grid">
-                    <div class="rec-item">
-                        <h4>🤖 AI Integration Strategy</h4>
-                        <ul>
-                            <li><strong>MCP Servers:</strong> Expose approved tools/data with RBAC and comprehensive
-                                audit trails</li>
-                            <li><strong>RAG Implementation:</strong> Retrieval-Augmented Generation over curated content
-                                with citations and DPIA</li>
-                            <li><strong>Safe AI Features:</strong> Low-risk, opt-in features post-launch (summaries,
-                                checklists, goal suggestions)</li>
-                            <li><strong>Feature Flags:</strong> Controlled rollout of AI capabilities with user consent
-                                and monitoring</li>
-                        </ul>
-                    </div>
-
-                    <div class="rec-item">
-                        <h4>📚 Modern Learning Technology</h4>
-                        <ul>
-                            <li><strong>xAPI/cmi5 Standards:</strong> Move beyond SCORM to enable learning anywhere,
-                                anytime</li>
-                            <li><strong>Learning Record Store:</strong> Centralized learning analytics and progress
-                                tracking</li>
-                            <li><strong>Viva Learning Integration:</strong> Staff discovery and assignment front door
-                            </li>
-                            <li><strong>Multi-platform Support:</strong> Bridge traditional LMS platforms with modern
-                                learning experiences</li>
-                        </ul>
-                    </div>
-
-                    <div class="rec-item">
-                        <h4>🛡️ Quality & Governance</h4>
-                        <ul>
-                            <li><strong>Poka Yoke Principles:</strong> Error prevention and user experience optimization
-                                from day one</li>
-                            <li><strong>Sustainability by Design:</strong> Performance budgets, green FinOps, and data
-                                lifecycle management</li>
-                            <li><strong>Paperless Transformation:</strong> E-signature adoption, form digitization, and
-                                print reduction targets</li>
-                            <li><strong>Cross-cutting Outcomes:</strong> Accessibility, security, and compliance built
-                                into every deliverable</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="recommendations">
-                <h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg>
-                    Success Metrics & Governance
-                </h3>
-                <div class="rec-grid">
-                    <div class="rec-item">
-                        <h4>📊 Key Performance Indicators</h4>
-                        <ul>
-                            <li><strong>Adoption Metrics:</strong> User registrations, digital referral percentages, and
-                                platform engagement</li>
-                            <li><strong>Learning Outcomes:</strong> Course completion rates, goal achievement, and
-                                knowledge retention</li>
-                            <li><strong>Operational Excellence:</strong> Service delivery times, data quality scores,
-                                and system uptime</li>
-                            <li><strong>User Experience:</strong> Accessibility compliance, performance benchmarks, and
-                                user satisfaction scores</li>
-                        </ul>
-                    </div>
-
-                    <div class="rec-item">
-                        <h4>🔒 Security & Compliance</h4>
-                        <ul>
-                            <li><strong>Cyber Essentials Plus:</strong> Enhanced certification with regular penetration
-                                testing</li>
-                            <li><strong>Data Governance:</strong> Consent management, retention policies, and PII
-                                protection</li>
-                            <li><strong>Privacy by Design:</strong> DPIA implementation and GDPR compliance throughout
-                            </li>
-                            <li><strong>Audit Trails:</strong> Comprehensive logging and monitoring for all user
-                                interactions</li>
-                        </ul>
-                    </div>
-
-                    <div class="rec-item">
-                        <h4>🔄 Continuous Improvement</h4>
-                        <ul>
-                            <li><strong>Agile Delivery:</strong> Sprint-based development with regular stakeholder
-                                feedback</li>
-                            <li><strong>User Research:</strong> Ongoing usability testing and user experience
-                                optimization</li>
-                            <li><strong>Technology Evolution:</strong> Regular technology stack reviews and
-                                modernization</li>
-                            <li><strong>Team Development:</strong> Continuous learning and skills development programs
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="conclusion">
-                <h3>Strategic Leadership Vision</h3>
-                <p>This enhanced digital transformation strategy positions CHSS to deliver <strong>world-class supported
-                        self-management</strong> while building modern, scalable, and sustainable digital capabilities.
-                    The approach balances innovation with pragmatism, ensuring we deliver value quickly while
-                    establishing the foundation for long-term success. By addressing the critical gaps in the current
-                    roadmap and implementing modern best practices, CHSS can become a leader in digital health
-                    innovation.</p>
-            </div>
-        </div>
-
-    </div>
-
-    <script>
-        function showSection(sectionId) {
-            // Hide all sections
-            const sections = document.querySelectorAll('.swot-section');
-            sections.forEach(section => section.classList.remove('active'));
-
-            // Remove active class from all nav buttons
-            const navButtons = document.querySelectorAll('.nav-btn');
-            navButtons.forEach(btn => btn.classList.remove('active'));
-
-            // Show selected section
-            document.getElementById(sectionId).classList.add('active');
-
-            // Add active class to clicked button
-            event.target.classList.add('active');
-        }
-
-        // Add smooth animations and interactions
-        document.addEventListener('DOMContentLoaded', function () {
-            const cards = document.querySelectorAll('.swot-card, .overview-card');
-
-            // Add intersection observer for animation on scroll
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.animation = 'fadeIn 0.6s ease-out forwards';
-                    }
-                });
-            }, {
-                threshold: 0.1
-            });
-
-            cards.forEach(card => {
-                observer.observe(card);
-
-                card.addEventListener('mouseenter', function () {
-                    this.style.transform = 'translateY(-8px) scale(1.02)';
+                // Add intersection observer for animation on scroll
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.animation = 'fadeIn 0.6s ease-out forwards';
+                        }
+                    });
+                }, {
+                    threshold: 0.1
                 });
 
-                card.addEventListener('mouseleave', function () {
-                    this.style.transform = 'translateY(0) scale(1)';
+                cards.forEach(card => {
+                    observer.observe(card);
+
+                    card.addEventListener('mouseenter', function () {
+                        this.style.transform = 'translateY(-8px) scale(1.02)';
+                    });
+
+                    card.addEventListener('mouseleave', function () {
+                        this.style.transform = 'translateY(0) scale(1)';
+                    });
                 });
             });
-        });
-    </script>
+        </script>
 </body>
 
 </html>
